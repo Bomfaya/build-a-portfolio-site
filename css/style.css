@@ -1,0 +1,159 @@
+body{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*** HEADER ***/
+
+.logoLeft{
+	float: left;
+	margin: 35px 0 20px 0;
+}
+
+	/* LOGO ANIMATION 360 ROTATION */
+#udacityLogo{
+	overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+#udacityLogo:hover {
+    transform: rotate(360deg);
+}
+	/* END OF ANIMATION */
+
+.logoRight{
+	float: right;
+}
+
+#sergioWinter{
+	color: #747704;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	font-size: 2.5em;
+	margin-bottom: -10px;
+}
+
+#frontendNinja{
+	color: #747704;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	float: right;
+}
+
+hr{
+	clear: both;
+}
+
+/*** CONTENT ***/
+.content{
+	margin: 50px 0 50px 0;
+}
+
+#imageContent{
+	width: 100%;
+	opacity: 0.9;
+	transition: all 10s ease-in-out;
+	-webkit-transition: -webkit- all 10s ease-in-out; /* Not sure yet when to use webkit + moz */
+	-moz-transition: -moz- all 10s ease-in-out;
+}
+
+#imageContent:hover{
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+
+/*** FOOTER ***/
+
+#featuredWork{
+	color: #BCBBBB;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	margin-left: 2%;
+}
+
+.footerBox{
+	float: left;
+	width: 30%;
+	margin-bottom: 50px;
+}
+
+.footerBoxMiddle{
+	margin: 0 5% 0 5%;
+}
+
+.footerImages{
+	height: 250px;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.footerImages:hover{
+	opacity: 1;
+}
+
+.footerBoxTitle{
+	text-align: center;
+	color: #5E6754;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+
+.footerBoxLink{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+}
+
+.footerBoxLink > a{
+	color: #5E6754;
+	text-decoration: none;
+}
+
+.footerBoxLink > a:hover{
+	font-weight: bold;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 700px){
+	body{
+		width: 90%;
+	}
+
+	.logoLeft{
+		width: 100%;
+		margin: 35px 0 20px 0;
+
+	}
+
+	#udacityLogo{
+		width: 50%;
+		margin-left: 30%;
+	}
+
+	#sergioWinter{
+		font-size: 2em;
+	}
+
+	#frontendNinja{
+		text-align: center;
+	}
+
+	.footerBox{
+
+		width: 100%;
+	}
+
+	.footerBoxMiddle{
+		margin: 0 0 15% 0;
+	}
+
+} 
